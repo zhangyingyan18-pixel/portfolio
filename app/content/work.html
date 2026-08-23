@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio - Yingyan Zhang</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Source+Serif+4:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        surface: "#fcf8fa",
+                        "on-secondary-fixed": "#002113",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e4e2e4",
+                        "on-secondary-container": "#00714d",
+                        "on-tertiary-fixed": "#271901",
+                        "tertiary-fixed-dim": "#dec29a",
+                        "on-tertiary-fixed-variant": "#574425",
+                        "on-primary-fixed": "#131b2e",
+                        "secondary-fixed": "#6ffbbe",
+                        "on-tertiary-container": "#98805d",
+                        "inverse-surface": "#303032",
+                        "surface-container-low": "#f6f3f5",
+                        secondary: "#006c49",
+                        "surface-container": "#f0edef",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        outline: "#76777d",
+                        "on-primary-container": "#7c839b",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#fcf8fa",
+                        "surface-off-white": "#F8FAFC",
+                        "deep-charcoal": "#0F172A",
+                        "strategic-emerald": "#10B981",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e4e2e4",
+                        "surface-container-high": "#eae7e9",
+                        "surface-tint": "#565e74",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "surface-dim": "#dcd9db",
+                        "inverse-primary": "#bec6e0",
+                        primary: "#000000",
+                        "on-secondary": "#ffffff",
+                        tertiary: "#000000",
+                        "outline-variant": "#c6c6cd",
+                        "secondary-fixed-dim": "#4edea3",
+                        "slate-gray": "#64748B",
+                        error: "#ba1a1a",
+                        "primary-fixed-dim": "#bec6e0",
+                        "on-surface-variant": "#45464d",
+                        "primary-fixed": "#dae2fd",
+                        "border-subtle": "#E2E8F0",
+                        "on-secondary-fixed-variant": "#005236",
+                        "on-error": "#ffffff",
+                        "primary-container": "#131b2e",
+                        "inverse-on-surface": "#f3f0f2",
+                        "on-surface": "#1b1b1d",
+                        "on-background": "#1b1b1d",
+                        background: "#fcf8fa",
+                        "tertiary-fixed": "#fcdeb5",
+                        "tertiary-container": "#271901",
+                        "secondary-container": "#6cf8bb"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.125rem",
+                        lg: "0.25rem",
+                        xl: "0.5rem",
+                        full: "0.75rem"
+                    },
+                    spacing: {
+                        "stack-md": "24px",
+                        unit: "4px",
+                        "section-gap": "120px",
+                        gutter: "32px",
+                        "margin-mobile": "20px",
+                        "stack-sm": "8px",
+                        "container-max": "1280px"
+                    },
+                    fontFamily: {
+                        "headline-lg": ["Geist"],
+                        "display-hero": ["Geist"],
+                        "display-hero-mobile": ["Geist"],
+                        "label-mono": ["JetBrains Mono"],
+                        "body-md": ["\"Source Serif 4\""],
+                        "headline-md": ["Geist"],
+                        "body-lg": ["\"Source Serif 4\""]
+                    },
+                    fontSize: {
+                        "headline-lg": ["32px", { lineHeight: "1.2", fontWeight: "600" }],
+                        "display-hero": ["48px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "600" }],
+                        "display-hero-mobile": ["32px", { lineHeight: "1.1", fontWeight: "600" }],
+                        "label-mono": ["13px", { lineHeight: "1.4", letterSpacing: "0.05em", fontWeight: "500" }],
+                        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "headline-md": ["24px", { lineHeight: "1.3", fontWeight: "500" }],
+                        "body-lg": ["20px", { lineHeight: "1.6", fontWeight: "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden pt-16">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-border-subtle transition-all duration-300" id="top-nav">
+<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold tracking-tight text-primary" href="/">Yingyan Zhang</a>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="font-label-mono text-label-mono text-slate-gray hover:text-primary hover:bg-surface-container-low transition-all py-2 px-3 rounded-DEFAULT" href="/">01. Home</a>
+<a class="font-label-mono text-label-mono text-primary border-b border-primary pb-1 opacity-80 duration-200" href="/work">02. Portfolio</a>
+<a class="font-label-mono text-label-mono text-slate-gray hover:text-primary hover:bg-surface-container-low transition-all py-2 px-3 rounded-DEFAULT" href="/about">03. About</a>
+</div>
+<a class="hidden md:inline-flex bg-deep-charcoal text-on-primary font-headline-md text-[14px] font-semibold px-4 py-2 rounded" href="/about#contact">Get in Touch</a>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-gutter pt-24 pb-section-gap">
+<!-- Header -->
+<header class="mb-24 md:mb-32 max-w-3xl">
+<h1 class="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero text-primary mb-6">Selected Work</h1>
+<p class="font-body-lg text-body-lg text-slate-gray italic leading-relaxed">A comprehensive overview of commercial results and strategic growth initiatives across UK and international markets over the past 5 years. Each case study details market entry, localized GTM systems, and verified business impact.</p>
+</header>
+<!-- Case Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<!-- Case 1 -->
+<article class="bg-surface-off-white border border-border-subtle rounded-lg overflow-hidden group flex flex-col h-full hover:shadow-lg transition-shadow duration-300">
+<div class="h-48 md:h-56 bg-surface-container-highest relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A modern, high-end retail flagship store interior in a major business district. The lighting is crisp and inviting, highlighting premium grocery products on sleek shelving. The color palette is composed of sophisticated slate greys, bright whites, and strategic emerald green accents. Professional, architectural photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXxOtDuYhBuF5IJST-uSU-4r4PZ445ECwxMJ6UVErUkV3RtQr6hTJDNLNlV13tiQW1wjue2qYvHiFxX05RdKP1pbsSz3Ci0kJ2C51d7RQ-2SMCO4sfSTn_Jwy688hLJ7vka9ONPu8CPkg-IiPpQprHfJiXwJ0yIe5ZJp7Okw1jKMU7CHiWriCVbyB4xLOFmduMCltHMrfCCRz7y5qNjAdUf4XY8hYP5AWu37qZEGJwkAtZqaElNek"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="mb-4">
+<span class="font-label-mono text-label-mono text-slate-gray uppercase">Retail Expansion</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-3">Tian Tian Market / Canary Wharf</h2>
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-6 flex-grow">
+                        Flagship launch in London's financial district. Orchestrated O2O campaign achieving record Day 1 sales and establishing a premium anchor presence.
+                    </p>
+<a class="inline-flex items-center text-primary font-label-mono text-label-mono group-hover:text-strategic-emerald transition-colors" href="/work/canary-wharf" data-case-link>
+                        View Case Study <span class="material-symbols-outlined ml-1 text-[18px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Case 2 -->
+<article class="bg-surface-off-white border border-border-subtle rounded-lg overflow-hidden group flex flex-col h-full hover:shadow-lg transition-shadow duration-300">
+<div class="h-48 md:h-56 bg-surface-container-highest relative overflow-hidden">
+<img alt="A professional map or flow diagram representing cross-border innovation and stakeholder connection between Europe and China." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0kgLFcKxC2yMh-LS194v4Q8bh9SLBrND81u4e7j-Y-sejR8iJLRlyQXho8yqw4xJh9MSosEAVNEUnTf5PNfaRQDIrLEkFz8yIZ-GzQuyK2WpLUBMhs3JCyzT8Rsg2WAlglnd92pSddnGS8W-dLWb_rRHGXOWfGkwYDtniSfOp6zbZ6-gHkNeWmNmAWsdjDY3pLmyqCDr2tCg34vMXXaM6KQxP02h7xieFODjRFhs_Fh-56K8pfKQ"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-4">
+<span class="font-label-mono text-label-mono text-slate-gray uppercase">Cross-border GTM</span>
+<div class="bg-white border border-border-subtle px-2 py-1 flex items-center rounded-sm">
+<span class="material-symbols-outlined text-[14px] text-strategic-emerald mr-1">analytics</span>
+<span class="font-label-mono text-label-mono text-strategic-emerald">42 Project Applications</span>
+</div>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-3">CENTI Group</h2>
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-6 flex-grow">
+                        Supported the communication layer between European innovation projects and the China market through research, bilingual content, and stakeholder coordination.
+                    </p>
+<a class="inline-flex items-center text-primary font-label-mono text-label-mono group-hover:text-strategic-emerald transition-colors" href="/work/centi" data-case-link>
+                        View Case Study <span class="material-symbols-outlined ml-1 text-[18px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Case 3 -->
+<!-- Case 3 -->
+<article class="bg-surface-off-white border border-border-subtle rounded-lg overflow-hidden group flex flex-col h-full hover:shadow-lg transition-shadow duration-300">
+<div class="h-48 md:h-56 bg-surface-container-highest relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sleek, modern high-rise residential building exterior. The architecture is sharp and contemporary. Shot during the day with clear skies. The image conveys premium property development. Color palette features slate blues, stark whites, and minimal warm tones. Professional real estate marketing style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa_icGoRkfxQikCY2tiK-BbGTKknEbKimNXHEjMNdyCo0YaXxx7DrpQ4HbqbgGNpVgw6CHq6N9ut-i8m9T-fyhOhC-9DK3AWnY0B9f8wadeT_BvjdKNYVrvxsAO4YUXy2FodQbHe2qSxhSeizWN46KiojmwhylqAdmgzElZnMYnu8w6b3wWR8RZPn8wynFS7So5O34oNyUmKnnO-tt6rT6ahZ_rQxx0t_F8PcSbVgB0ktyk6UJ6xA"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="mb-4">
+<span class="font-label-mono text-label-mono text-slate-gray uppercase">Property GTM</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-3">A London Property Company</h2>
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-6 flex-grow">
+                        End-to-end go-to-market strategy for premium residential developments, targeting international students and young professionals in key urban centers.
+                    </p>
+<a class="inline-flex items-center text-primary font-label-mono text-label-mono group-hover:text-strategic-emerald transition-colors" href="/work/london-property-company" data-case-link>
+                        View Case Study <span class="material-symbols-outlined ml-1 text-[18px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Case 6 -->
+</section>
+<!-- CTA Section -->
+<section class="mt-section-gap py-16 px-8 bg-surface-off-white border border-border-subtle rounded-xl text-center">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Need a practical plan for your UK/European market entry?</h2>
+<p class="font-body-md text-body-md text-slate-gray mb-8 max-w-2xl mx-auto">
+                Let's discuss how data-driven strategy and meticulous execution can accelerate your growth.
+            </p>
+<button class="bg-deep-charcoal text-on-primary font-label-mono text-label-mono px-8 py-4 rounded-DEFAULT hover:opacity-90 transition-opacity">
+                Let's talk
+            </button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-off-white border-t border-border-subtle">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-stack-md px-gutter max-w-container-max mx-auto">
+<div class="md:col-span-4">
+<span class="font-headline-md text-headline-md font-bold text-primary block mb-2">Yingyan Zhang</span>
+<span class="font-body-md text-body-md text-slate-gray">© 2024 Yingyan Zhang. Built for Growth.</span>
+</div>
+<div class="md:col-span-8 flex flex-wrap gap-x-8 gap-y-4 md:justify-end items-center">
+<a class="font-label-mono text-label-mono text-slate-gray hover:text-primary hover:underline transition-all" href="mailto:yingyan.zhang.career@gmail.com">Email</a>
+<a class="font-label-mono text-label-mono text-slate-gray hover:text-primary hover:underline transition-all" href="https://www.linkedin.com/in/yingyan-zhang-89ba96165/">LinkedIn</a>
+<a class="font-label-mono text-label-mono text-slate-gray hover:text-primary hover:underline transition-all" href="/cv/Yingyan-Zhang-CV.pdf">Download CV</a>
+<span class="font-label-mono text-label-mono text-slate-gray hover:text-primary hover:underline transition-all" >Privacy Policy</span>
+</div>
+</div>
+</footer>
+<script>
+        // Simple script to handle nav background opacity on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('top-nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-sm');
+            } else {
+                nav.classList.remove('shadow-sm');
+            }
+        });
+    </script>
+</body></html>
+
+<!-- Case Study: CENTI | Cross-border Innovation (v2) -->

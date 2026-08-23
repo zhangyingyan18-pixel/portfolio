@@ -1,0 +1,395 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Case Study: Tian Tian Market | Canary Wharf</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Source+Serif+4:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#fcf8fa",
+                        "on-secondary-fixed": "#002113",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e4e2e4",
+                        "on-secondary-container": "#00714d",
+                        "on-tertiary-fixed": "#271901",
+                        "tertiary-fixed-dim": "#dec29a",
+                        "on-tertiary-fixed-variant": "#574425",
+                        "on-primary-fixed": "#131b2e",
+                        "secondary-fixed": "#6ffbbe",
+                        "on-tertiary-container": "#98805d",
+                        "inverse-surface": "#303032",
+                        "surface-container-low": "#f6f3f5",
+                        "secondary": "#006c49",
+                        "surface-container": "#f0edef",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#76777d",
+                        "on-primary-container": "#7c839b",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#fcf8fa",
+                        "surface-off-white": "#F8FAFC",
+                        "deep-charcoal": "#0F172A",
+                        "strategic-emerald": "#10B981",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e4e2e4",
+                        "surface-container-high": "#eae7e9",
+                        "surface-tint": "#565e74",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "surface-dim": "#dcd9db",
+                        "inverse-primary": "#bec6e0",
+                        "primary": "#000000",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#000000",
+                        "outline-variant": "#c6c6cd",
+                        "secondary-fixed-dim": "#4edea3",
+                        "slate-gray": "#64748B",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#bec6e0",
+                        "on-surface-variant": "#45464d",
+                        "primary-fixed": "#dae2fd",
+                        "border-subtle": "#E2E8F0",
+                        "on-secondary-fixed-variant": "#005236",
+                        "on-error": "#ffffff",
+                        "primary-container": "#131b2e",
+                        "inverse-on-surface": "#f3f0f2",
+                        "on-surface": "#1b1b1d",
+                        "on-background": "#1b1b1d",
+                        "background": "#fcf8fa",
+                        "tertiary-fixed": "#fcdeb5",
+                        "tertiary-container": "#271901",
+                        "secondary-container": "#6cf8bb"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-md": "24px",
+                        "unit": "4px",
+                        "section-gap": "120px",
+                        "gutter": "32px",
+                        "margin-mobile": "20px",
+                        "stack-sm": "8px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Geist"],
+                        "display-hero": ["Geist"],
+                        "display-hero-mobile": ["Geist"],
+                        "label-mono": ["JetBrains Mono"],
+                        "body-md": ["\"Source Serif 4\""],
+                        "headline-md": ["Geist"],
+                        "body-lg": ["\"Source Serif 4\""]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "display-hero": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "display-hero-mobile": ["32px", { "lineHeight": "1.1", "fontWeight": "600" }],
+                        "label-mono": ["13px", { "lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "body-lg": ["20px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        [data-weight="fill"] {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        .evidence-blur {
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+        
+        .consulting-grid {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(226, 232, 240, 0.5) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(226, 232, 240, 0.5) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-deep-charcoal/80 backdrop-blur-md border-b border-border-subtle dark:border-outline-variant flat no shadows">
+<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold tracking-tight text-primary dark:text-on-primary hover:opacity-80 transition-opacity" href="/">
+                Yingyan Zhang
+            </a>
+<div class="hidden md:flex space-x-8">
+<a class="font-label-mono text-label-mono text-slate-gray dark:text-outline hover:text-primary dark:hover:text-on-primary transition-colors hover:bg-surface-container-low dark:hover:bg-primary-container/50 transition-all p-2 rounded" href="/">01. Home</a>
+<a class="font-label-mono text-label-mono text-primary dark:text-secondary-fixed-dim border-b border-primary dark:border-secondary-fixed-dim pb-1 p-2" href="/work">02. Portfolio</a>
+<a class="font-label-mono text-label-mono text-slate-gray dark:text-outline hover:text-primary dark:hover:text-on-primary transition-colors hover:bg-surface-container-low dark:hover:bg-primary-container/50 transition-all p-2 rounded" href="/about">03. About</a>
+</div>
+<a class="hidden md:inline-flex bg-deep-charcoal text-on-primary font-headline-md text-[14px] font-semibold px-4 py-2 rounded" href="/about#contact">Get in Touch</a>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pb-section-gap max-w-container-max mx-auto px-margin-mobile md:px-gutter pt-8">
+<!-- Hero Section -->
+<header class="mb-section-gap grid grid-cols-1 lg:grid-cols-12 gap-stack-md items-start"><div class="lg:col-span-7 space-y-4">
+    <div class="mb-2">
+        <span class="font-label-mono text-[11px] text-slate-gray uppercase tracking-wider">CASE STUDY · RETAIL GTM</span>
+    </div>
+    <h1 class="font-display-hero text-[48px] md:text-[64px] text-primary font-bold leading-[1.1] tracking-tight">From flagship opening to local growth infrastructure.</h1>
+    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed text-slate-gray">
+        How a flagship Asian supermarket was connected to Canary Wharf Group’s media, community, events and customer ecosystem.
+    </p>
+    <div class="flex flex-wrap gap-8 pt-6 border-t border-border-subtle">
+        <div class="flex flex-col">
+            <span class="font-label-mono text-[11px] text-slate-gray uppercase mb-1">Client</span>
+            <span class="font-headline-md text-[16px] font-semibold">Tian Tian Market</span>
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label-mono text-[11px] text-slate-gray uppercase mb-1">Strategy</span>
+            <span class="font-headline-md text-[16px] font-semibold">Growth Strategy</span>
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label-mono text-[11px] text-slate-gray uppercase mb-1">Timeline</span>
+            <span class="font-headline-md text-[16px] font-semibold">Q3 2022</span>
+        </div>
+    </div>
+    <div class="grid grid-cols-3 gap-4 pt-8">
+        <div class="bg-surface-off-white border border-border-subtle p-4 rounded-lg">
+            <span class="font-label-mono text-[11px] text-slate-gray uppercase block mb-2">Instagram Reach</span>
+            <span class="font-headline-lg text-strategic-emerald text-[32px]">104k</span>
+        </div>
+        <div class="bg-surface-off-white border border-border-subtle p-4 rounded-lg">
+            <span class="font-label-mono text-[11px] text-slate-gray uppercase block mb-2">TikTok Plays</span>
+            <span class="font-headline-lg text-strategic-emerald text-[32px]">246.6k</span>
+        </div>
+        <div class="bg-surface-off-white border border-border-subtle p-4 rounded-lg">
+            <span class="font-label-mono text-[11px] text-slate-gray uppercase block mb-2">Xiaohongshu Views</span>
+            <span class="font-headline-lg text-strategic-emerald text-[32px]">40.4k</span>
+        </div>
+    </div>
+</div>
+<div class="lg:col-span-5 h-[400px] w-full border border-border-subtle rounded-lg overflow-hidden shadow-sm relative group mt-8 lg:mt-0">
+    <div class="bg-cover bg-center w-full h-full absolute inset-0" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBGYMjYrqCFKRSzvZ9TVUNOMY2yZBYYEiknLbhxgAtgxko_EVne_uaqEUUno43fzyR2Z3nJpXR1BQ0pdy8jODTELXL55Gs0PL46UtNABIsHlCcUw_RXwxyCn8QOZuSQBNxYeYSEdWfmLqfacGaJlCN4VFeE5MtRYFopfPP4Cw6knq68lCus7BGpe4MFwgEpbd0I7-yMADeXlY2etnieeezN1ijyjYWJKO1uawWNsgo-cw5RNxAm4OY&quot;);"></div>
+</div></header>
+<!-- Divider -->
+<hr class="border-border-subtle my-stack-md">
+<!-- Case Content Area -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-stack-md mt-8">
+<!-- Left Column (Nav/Metadata) -->
+
+<!-- Right Column (Content) -->
+<div class="md:col-span-12 space-y-24">
+<!-- Section 1: Business Challenge -->
+<section class="space-y-6 md:grid md:grid-cols-12 md:gap-8 md:space-y-0" id="challenge"><div class="md:col-span-4"><h2 class="font-headline-lg text-headline-lg font-bold tracking-tight text-primary">01. Business Challenge</h2></div><div class="md:col-span-8"><p class="font-body-lg text-body-lg text-on-surface-variant mb-6 leading-relaxed text-slate-gray">The brand could not rely only on its own channels for this flagship launch. We needed to address four core questions:</p><ul class="space-y-4 font-body-md text-on-surface list-disc pl-5"><li class="">How do we make a new store relevant to local people?</li><li class="">How do we reach office workers, residents and visitors differently?</li><li class="">How do we use CW Group’s ecosystem effectively?</li><li class="">How do we turn opening attention into repeat activity?</li></ul></div></section>
+<!-- Section 2: Strategic Approach -->
+<section class="space-y-6 md:grid md:grid-cols-12 md:gap-8 md:space-y-0" id="approach"><div class="md:col-span-4"><h2 class="font-headline-lg text-headline-lg font-bold tracking-tight text-primary">02. Strategic Approach</h2></div><div class="md:col-span-8"><p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed text-slate-gray">The opening was designed as a multi-week local GTM and partnership programme rather than a single launch moment, following a clear connectivity architecture.</p><div class="bg-surface-off-white border border-border-subtle p-8 rounded-lg mt-6"><div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 relative"><div class="bg-surface border border-border-subtle p-4 w-48 text-center rounded shadow-sm z-10 relative"><span class="material-symbols-outlined text-slate-gray mb-2 text-[32px]" data-icon="visibility">visibility</span><h4 class="font-headline-md text-[16px] text-primary">Awareness</h4><p class="font-label-mono text-[11px] text-slate-gray mt-2">CW Group Media</p></div><div class="hidden md:flex flex-1 items-center justify-center"><div class="h-[1px] w-full bg-border-subtle relative"><div class="absolute right-0 -top-[5px] w-2 h-2 border-t border-r border-border-subtle transform rotate-45"></div></div></div><div class="bg-surface border border-border-subtle p-4 w-48 text-center rounded shadow-sm z-10 relative"><span class="material-symbols-outlined text-slate-gray mb-2 text-[32px]" data-icon="search">search</span><h4 class="font-headline-md text-[16px] text-primary">Discovery</h4><p class="font-label-mono text-[11px] text-slate-gray mt-2">Tasting &amp; Events</p></div><div class="hidden md:flex flex-1 items-center justify-center"><div class="h-[1px] w-full bg-border-subtle relative"><div class="absolute right-0 -top-[5px] w-2 h-2 border-t border-r border-border-subtle transform rotate-45"></div></div></div><div class="bg-surface border border-strategic-emerald p-4 w-48 text-center rounded shadow-sm z-10 relative overflow-hidden"><div class="absolute top-0 left-0 w-full h-1 bg-strategic-emerald"></div><span class="material-symbols-outlined text-strategic-emerald mb-2 text-[32px]" data-icon="loyalty">loyalty</span><h4 class="font-headline-md text-[16px] text-primary">Loyalty</h4><p class="font-label-mono text-[11px] text-strategic-emerald mt-2">Repeat Activity</p></div></div></div></div></section>
+<!-- Section 3: Audience Strategy -->
+<section class="space-y-6" id="audience">
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight">03. Audience Strategy</h2>
+<p class="font-body-md text-on-surface mb-6">
+                        Different audiences needed different entry points to understand why the store was relevant to their everyday lives.
+                    </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4"><!-- Card 1 -->
+<div class="border border-border-subtle p-6 rounded-lg bg-surface flex flex-col">
+<span class="material-symbols-outlined text-strategic-emerald mb-4 text-[32px]">work</span>
+<h3 class="font-headline-md text-primary mb-2">Office Workers</h3>
+<p class="font-label-mono text-slate-gray mb-4">Lunch / After-work / Convenience</p>
+<p class="font-body-md text-on-surface-variant">Reached via corporate tenant communication, lunch options, and quick grocery shopping routes.</p>
+</div>
+<!-- Card 2 -->
+<div class="border border-border-subtle p-6 rounded-lg bg-surface flex flex-col">
+<span class="material-symbols-outlined text-strategic-emerald mb-4 text-[32px]">home</span>
+<h3 class="font-headline-md text-primary mb-2">Residents</h3>
+<p class="font-label-mono text-slate-gray mb-4">Everyday shopping / Community</p>
+<p class="font-body-md text-on-surface-variant">Connected through residential apps, family food ranges, and community loyalty benefits.</p>
+</div>
+<!-- Card 3 -->
+<div class="border border-border-subtle p-6 rounded-lg bg-surface flex flex-col">
+<span class="material-symbols-outlined text-strategic-emerald mb-4 text-[32px]">explore</span>
+<h3 class="font-headline-md text-primary mb-2">Visitors</h3>
+<p class="font-label-mono text-slate-gray mb-4">Discovery / Experience</p>
+<p class="font-body-md text-on-surface-variant">Engaged with tasting events, food discovery, and social sharing opportunities in the mall.</p>
+</div>
+<!-- Card 4 -->
+<div class="border border-border-subtle p-6 rounded-lg bg-surface flex flex-col">
+<span class="material-symbols-outlined text-strategic-emerald mb-4 text-[32px]">school</span>
+<h3 class="font-headline-md text-primary mb-2">Students</h3>
+<p class="font-label-mono text-slate-gray mb-4">Affordability / Social relevance</p>
+<p class="font-body-md text-on-surface-variant">Targeted with student discounts, affordable snacks, giveaways, and creator content.</p>
+</div></div>
+</section>
+<!-- Section 4: CWG Partnership -->
+<section class="space-y-6" id="partnership">
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight">04. CW Group Partnership System</h2>
+<p class="font-body-md text-on-surface">
+                        We mapped an integrated channel system utilizing Canary Wharf Group's existing infrastructure.
+                    </p>
+<div class="space-y-8 mt-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-7">
+<img alt="Retail Partnership Ecosystem Diagram" class="w-full rounded-lg border border-border-subtle shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1OnEAK0g9M9twCPgjrlQ-e_6USqzHGPRH6-mRbhGC-hjYHy1o88sPeD9RTOvouhm2vv2yMNCBTgZyCleCauoFnvtXjkYC7bmnJ7PGSmAp97418o2m3plH2cNjv3SWjB6DPvI9Aw353U6hp1V0Tw_-rIgzqYrmPKFhXefX4sveLuaDC5lynT1E-Sbr5llkHFag9JrNVUixmngyFFSP0mKn-WVnF44LlmZAzkrv0phnc0okw6NgUnE">
+</div>
+<div class="lg:col-span-5 grid grid-cols-1 gap-6">
+<div>
+<h4 class="font-headline-md text-[18px] text-primary mb-3 border-b border-border-subtle pb-2">Offline Channels</h4>
+<ul class="font-body-md text-on-surface-variant space-y-1">
+<li class="">Illuminated posters</li>
+<li class="">Digital screens</li>
+<li class="">Car park billboard</li>
+<li class="">Mall advertising</li>
+<li class="">Pop-up &amp; event spaces</li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline-md text-[18px] text-primary mb-3 border-b border-border-subtle pb-2">Audience Channels</h4>
+<ul class="font-body-md text-on-surface-variant space-y-1">
+<li class="">Corporate database</li>
+<li class="">Residential App / portal</li>
+<li class="">Consumer newsletter</li>
+<li class="">Office tenant comms</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-5 order-2 lg:order-1">
+<h4 class="font-headline-md text-[18px] text-primary mb-3 border-b border-border-subtle pb-2">Digital Channels</h4>
+<ul class="font-body-md text-on-surface-variant space-y-1">
+<li class="">Canary Wharf Website</li>
+<li class="">Canary Wharf App</li>
+<li class="">CWG Instagram &amp; TikTok</li>
+<li class="">Merchant directory</li>
+<li class="">Offers &amp; deals pages</li>
+</ul>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2">
+<img alt="Digital Assets Collage" class="w-full rounded-lg border border-border-subtle shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4Gzx3zsdEB73TC5pB1z-PArBIGvFP3iQoz7wCRsMdmw8lcE3T9HxLEhGqpMUE5MCVGR3MLYyTfFR9XSpzk0UDStyrSKxMxYXyPE3a7ntxpzCQHIGQDMo6NXJ_dWak2-CD80DM2zMM6T3hvpwKnup7P-yNaz8HW_uK1qTBc-u4uaS2EfUY61K54fPVK8CZqwQyJzw5ozupIV8lmtzFtrPgywizNl9TdGo1mrnddfkRYJkeWhBjsRU">
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Results -->
+<section class="space-y-6" id="results">
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight">05. Media &amp; Results</h2>
+<p class="font-body-md text-on-surface mb-6">
+                        Selected project evidence from opening campaign and media materials (reporting window: 3–30 September 2022).
+                    </p>
+<div class="space-y-8"><div>
+<h3 class="font-headline-md text-[20px] text-primary mb-6">Organic / Owned Performance</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <!-- Instagram Reach -->
+    <div class="bg-surface-container-low border border-border-subtle p-6 rounded-lg text-center flex flex-col justify-center items-center transition-all hover:shadow-sm">
+        <span class="font-display-hero text-primary text-[32px] md:text-headline-lg mb-2">104k</span>
+        <span class="font-label-mono text-slate-gray uppercase text-[11px] tracking-wider">Instagram Reach</span>
+    </div>
+    <!-- TikTok Plays -->
+    <div class="bg-surface-container-low border border-border-subtle p-6 rounded-lg text-center flex flex-col justify-center items-center transition-all hover:shadow-sm">
+        <span class="font-display-hero text-primary text-[32px] md:text-headline-lg mb-2">246.6k</span>
+        <span class="font-label-mono text-slate-gray uppercase text-[11px] tracking-wider">TikTok Plays</span>
+    </div>
+    <!-- Xiaohongshu Views -->
+    <div class="bg-surface-container-low border border-border-subtle p-6 rounded-lg text-center flex flex-col justify-center items-center transition-all hover:shadow-sm">
+        <span class="font-display-hero text-primary text-[32px] md:text-headline-lg mb-2">40.4k</span>
+        <span class="font-label-mono text-slate-gray uppercase text-[11px] tracking-wider">Xiaohongshu Views</span>
+    </div>
+    <!-- Facebook Reach -->
+    <div class="bg-surface-container-low border border-border-subtle p-6 rounded-lg text-center flex flex-col justify-center items-center transition-all hover:shadow-sm">
+        <span class="font-display-hero text-primary text-[32px] md:text-headline-lg mb-2">161k</span>
+        <span class="font-label-mono text-slate-gray uppercase text-[11px] tracking-wider">Facebook Reach</span>
+    </div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface p-6 rounded-lg border border-border-subtle">
+<h3 class="font-headline-md text-[20px] text-primary mb-4">Creator Layer</h3>
+<ul class="font-body-md text-on-surface-variant space-y-3">
+<li class="flex justify-between border-b border-border-subtle pb-2"><span class="text-slate-gray">Influencer accounts</span><strong class="text-primary font-headline-md">6</strong></li>
+<li class="flex justify-between border-b border-border-subtle pb-2"><span class="text-slate-gray">Combined plays</span><strong class="text-primary font-headline-md">182k</strong></li>
+<li class="flex justify-between"><span class="text-slate-gray">Combined likes</span><strong class="text-primary font-headline-md">7.3k</strong></li>
+</ul>
+</div>
+<div class="bg-surface p-6 rounded-lg border border-border-subtle">
+<h3 class="font-headline-md text-[20px] text-primary mb-4">Paid Social Media</h3>
+<ul class="font-body-md text-on-surface-variant space-y-3">
+<li class="flex justify-between border-b border-border-subtle pb-2"><span class="text-slate-gray">Recorded spend (FB &amp; IG)</span><strong class="text-primary font-headline-md">£215.22</strong></li>
+<li class="flex justify-between border-b border-border-subtle pb-2"><span class="text-slate-gray">Instagram paid reach</span><strong class="text-primary font-headline-md">61.9k</strong></li>
+<li class="flex justify-between"><span class="text-slate-gray">Facebook paid reach</span><strong class="text-primary font-headline-md">23k</strong></li>
+</ul>
+</div>
+</div></div>
+</section>
+<!-- Section 6: Yingyan's Contribution -->
+<section class="space-y-6" id="contribution">
+<div class="bg-surface-off-white border-l-4 border-strategic-emerald rounded-r-lg my-8 p-6">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6 font-bold tracking-tight">06. Yingyan's Contribution</h2>
+<p class="font-body-lg text-body-lg text-on-surface mb-6 leading-relaxed text-slate-gray">
+                                I supported the Canary Wharf flagship opening by mapping CW Group’s local media and partnership ecosystem, coordinating content and activation requirements, and connecting the store team, venue stakeholders, brand partners, creators, PR and customer channels around one local growth story.
+                            </p>
+<div class="mb-8 rounded-lg overflow-hidden border border-border-subtle shadow-sm">
+<img alt="Visual proof of coordinated content and activation" class="w-full h-64 object-cover" src="/canary-wharf-activation-hd.jpg">
+</div><div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<h4 class="font-label-mono text-slate-gray uppercase mb-2">Partnership Coordination</h4>
+<p class="font-body-md text-on-surface-variant">Followed up with CW Group on media channels, influencer lists, mall advertising, and digital placements across their ecosystem.</p>
+</div>
+<div>
+<h4 class="font-label-mono text-slate-gray uppercase mb-2">Channel Planning</h4>
+<p class="font-body-md text-on-surface-variant">Mapped CWG and owned channels, clarified roles for social platforms, and connected different audience segments with appropriate touchpoints.</p>
+</div>
+<div>
+<h4 class="font-label-mono text-slate-gray uppercase mb-2">Content Planning</h4>
+<p class="font-body-md text-on-surface-variant">Planned content themes from store announcements and previews to office lunch use cases, tastings, and loyalty benefits.</p>
+</div>
+<div>
+<h4 class="font-label-mono text-slate-gray uppercase mb-2">Activation</h4>
+<p class="font-body-md text-on-surface-variant">Coordinated food tastings, Lion Dance events, giveaways, health &amp; safety requirements, and stakeholder alignment.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-off-white dark:bg-deep-charcoal border-t border-border-subtle dark:border-outline-variant w-full py-section-gap flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-stack-md px-gutter max-w-container-max mx-auto">
+<div class="md:col-span-6 flex flex-col justify-between">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-on-primary mb-4 md:mb-0">Yingyan Zhang</span>
+<span class="font-body-md text-body-md text-slate-gray dark:text-outline mt-auto">© 2024 Yingyan Zhang. Built for Growth.</span>
+</div>
+<div class="md:col-span-6 flex flex-col md:items-end space-y-2">
+<h5 class="font-label-mono text-label-mono text-primary dark:text-on-primary mb-2">Connect</h5>
+<a class="font-body-md text-body-md text-slate-gray dark:text-outline hover:text-primary dark:hover:text-on-primary hover:underline transition-all" href="mailto:yingyan.zhang.career@gmail.com">Email</a>
+<a class="font-body-md text-body-md text-slate-gray dark:text-outline hover:text-primary dark:hover:text-on-primary hover:underline transition-all" href="https://www.linkedin.com/in/yingyan-zhang-89ba96165/">LinkedIn</a>
+<a class="font-body-md text-body-md text-slate-gray dark:text-outline hover:text-primary dark:hover:text-on-primary hover:underline transition-all" href="/cv/Yingyan-Zhang-CV.pdf">Download CV</a>
+<span class="font-body-md text-body-md text-slate-gray dark:text-outline hover:text-primary dark:hover:text-on-primary hover:underline transition-all mt-4 text-sm" >Privacy Policy</span>
+</div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<nav aria-label="Case study navigation" class="max-w-6xl mx-auto px-6 md:px-10 py-12 border-t border-border-subtle flex justify-between items-center gap-8"><span></span><a href="/work" class="font-label-mono text-label-mono text-slate-gray hover:text-strategic-emerald">← Back to all work</a><a href="/work/centi" class="font-label-mono text-label-mono text-primary hover:text-strategic-emerald">Next case →</a></nav></body></html>
+
+<!-- Home | Professional Portrait Variant -->

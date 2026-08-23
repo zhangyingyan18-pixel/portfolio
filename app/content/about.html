@@ -1,0 +1,312 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>About - Yingyan Zhang</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Source+Serif+4:ital,wght@0,400;0,600;1,400&amp;family=JetBrains+Mono:wght@400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;family=Source+Serif+4:wght@100..900&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e4e2e4",
+                        "on-primary-fixed": "#131b2e",
+                        "on-secondary-container": "#00714d",
+                        "on-secondary-fixed": "#002113",
+                        "secondary-fixed": "#6ffbbe",
+                        "inverse-on-surface": "#f3f0f2",
+                        "inverse-surface": "#303032",
+                        "border-subtle": "#E2E8F0",
+                        "tertiary-container": "#271901",
+                        "on-secondary-fixed-variant": "#005236",
+                        "outline-variant": "#c6c6cd",
+                        "surface-container": "#f0edef",
+                        "surface-tint": "#565e74",
+                        "on-background": "#1b1b1d",
+                        "surface-container-high": "#eae7e9",
+                        "primary": "#000000",
+                        "secondary-container": "#6cf8bb",
+                        "secondary": "#006c49",
+                        "outline": "#76777d",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e4e2e4",
+                        "secondary-fixed-dim": "#4edea3",
+                        "tertiary": "#000000",
+                        "on-tertiary-container": "#98805d",
+                        "surface-bright": "#fcf8fa",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#45464d",
+                        "strategic-emerald": "#10B981",
+                        "slate-gray": "#64748B",
+                        "surface-dim": "#dcd9db",
+                        "error-container": "#ffdad6",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#bec6e0",
+                        "on-tertiary-fixed-variant": "#574425",
+                        "surface-off-white": "#F8FAFC",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "deep-charcoal": "#0F172A",
+                        "primary-container": "#131b2e",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed": "#fcdeb5",
+                        "primary-fixed-dim": "#bec6e0",
+                        "primary-fixed": "#dae2fd",
+                        "surface-container-low": "#f6f3f5",
+                        "on-surface": "#1b1b1d",
+                        "surface": "#fcf8fa",
+                        "on-tertiary-fixed": "#271901",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#dec29a",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "on-primary-container": "#7c839b",
+                        "background": "#fcf8fa"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem",
+                        "4": "1rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "container-max": "1280px",
+                        "stack-sm": "8px",
+                        "gutter": "32px",
+                        "stack-md": "24px",
+                        "unit": "4px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Geist"],
+                        "display-hero": ["Geist"],
+                        "body-md": ["Geist"],
+                        "body-lg": ["Geist"],
+                        "headline-md": ["Geist"],
+                        "display-hero-mobile": ["Geist"],
+                        "label-mono": ["JetBrains Mono"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "display-hero": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["20px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "display-hero-mobile": ["32px", { "lineHeight": "1.1", "fontWeight": "600" }],
+                        "label-mono": ["13px", { "lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col pt-20">
+<!-- TopNavBar Component -->
+<header class="fixed top-0 w-full z-50 bg-surface-container-lowest/80 dark:bg-surface-container-lowest/80 border-b border-border-subtle dark:border-outline-variant backdrop-blur-md">
+<div class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-on-surface uppercase tracking-tighter" href="/">Yingyan Zhang</a>
+<nav class="hidden md:flex gap-8">
+<a class="text-slate-gray dark:text-on-surface-variant font-label-mono text-label-mono hover:text-primary dark:hover:text-on-surface transition-colors duration-200" href="/">01. Home</a>
+<a class="text-slate-gray dark:text-on-surface-variant font-label-mono text-label-mono hover:text-primary dark:hover:text-on-surface transition-colors duration-200" href="/work">02. Portfolio</a>
+<a aria-current="page" class="text-primary dark:text-on-surface border-b-2 border-primary font-bold pb-1 font-label-mono text-label-mono hover:text-primary dark:hover:text-on-surface transition-colors duration-200" href="/about">03. About</a>
+</nav>
+<a class="hidden md:inline-flex bg-deep-charcoal text-on-primary font-headline-md text-[14px] font-semibold px-4 py-2 rounded" href="/about#contact">Get in Touch
+            </a>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="px-margin-mobile md:px-gutter max-w-container-max mx-auto pt-section-gap pb-16">
+
+</section>
+<!-- Career Arc -->
+<section class="bg-surface-off-white py-24 border-y border-border-subtle">
+<div class="px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-primary mb-12">Career Arc</h2>
+<div class="relative border-l border-border-subtle ml-4 md:ml-0 md:flex md:border-l-0 md:border-t pt-8 md:pt-12 gap-8">
+<!-- Phase 1 -->
+<div class="relative pl-8 md:pl-0 pb-12 md:pb-0 md:flex-1">
+<div class="absolute left-[-5px] top-0 w-2.5 h-2.5 bg-strategic-emerald rounded-full md:left-0 md:top-[-45px]"></div>
+<div class="mb-6 rounded-4 overflow-hidden border border-border-subtle aspect-video">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhfqX6yFjI6Dpu6VR8cPvtuC8WhK3T6r_-1NjQlj2anhFrGAPjtJFvtu7z1cd_wl5_Zd7aMieKrjT5Wg8EmWiZ1k53birjEPyv_gEnOY26hb6KPO-PEWixTYl-nHDuNVIj0nAalNQCIbUuuedxia2-A_qBANR-b836sYnuOM2g1bF5000FDPeR8U_msw7yIq34joyFlV55xmv2edABkWkoD5ZFEle-3BK_Euli4tZ2bBJnxBq7Ok0" alt="Cross-border Research &amp; Communications" class="w-full h-full object-cover">
+</div>
+<div class="font-label-mono text-label-mono text-slate-gray mb-2">2018 — 2020</div>
+<h3 class="font-headline-md text-primary mb-2">Cross-border Research &amp; Communications</h3>
+<p class="font-body-md text-on-surface-variant">Built a foundation in market research, bilingual content, event communications and stakeholder outreach across UK–Europe–Asia innovation programmes.</p>
+</div>
+<!-- Phase 2 -->
+<div class="relative pl-8 md:pl-0 pb-12 md:pb-0 md:flex-1">
+<div class="absolute left-[-5px] top-0 w-2.5 h-2.5 bg-strategic-emerald rounded-full md:left-0 md:top-[-45px]"></div>
+<div class="mb-6 rounded-4 overflow-hidden border border-border-subtle aspect-video">
+<img alt="Retail Growth, CRM &amp; Partnerships" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UV5Q-pbOU3yvVpyQj4KHuvnaGiuSz0eUjXwHuONcZZwUNr5FmSccWoEND_3VBpHxCAtF4vjaGFw4BzHEHl_-7DG9KsSAK0wIVe9IIXk3VyzNClDRND5ky2_1GNHk4o7d_RNX5UKiB9Ypw4TzAnmz_8eGLwhvBshTL1KNETb2GmvNQPYp39syanUOhPsMdqfUuS2Xw1APlI26AoP6VxGMQvKZOgFApmSgn8b8tqIxCH8nKN8RWiWnU7xQ">
+</div>
+<div class="font-label-mono text-label-mono text-slate-gray mb-2">2021 — 2025</div>
+<h3 class="font-headline-md text-primary mb-2">Retail Growth, CRM &amp; Partnerships</h3>
+<p class="font-body-md text-on-surface-variant">Grew community and membership programmes while delivering campaigns, store launches, local partnerships and performance marketing for a UK Asian grocery retailer.</p>
+</div>
+<!-- Phase 3 -->
+<div class="relative pl-8 md:pl-0 md:flex-1">
+<div class="absolute left-[-5px] top-0 w-2.5 h-2.5 bg-strategic-emerald rounded-full md:left-0 md:top-[-45px]"></div>
+<div class="mb-6 rounded-4 overflow-hidden border border-border-subtle aspect-video">
+<img alt="B2B Digital GTM &amp; Transformation" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UIIvZu6Axp-yVc3ZlpsQByw0Dmt3ENoWOiiaTQ6WbDVUpzYdKCFpAr_-8QKjARbqejdsOkn1Wb7u8Grr_LVheRPzYjsJy9SFJ-Sg5S1cDbLgPQglaJDqmgcV09Nb23CtqA_CsZJUmHFvciFSAijdCWbQVXFjPNzFWvqH0WhAXGH_-RpmJmbsAn6v_v-AxaxurqOThL-PeeOsKFZkzuVMnmBTsrGnmgxebd47PEbTAn7-OCWYSMSD9pcQ">
+</div>
+<div class="font-label-mono text-label-mono text-slate-gray mb-2">2025 — 2026</div>
+<h3 class="font-headline-md text-primary mb-2">B2B Digital GTM &amp; Transformation</h3>
+<p class="font-body-md text-on-surface-variant">Applying the same commercialisation lens to technical and manufacturing businesses through buyer-focused websites, SEO and content, enquiry workflows, and practical AI-use-case mapping.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Working Principles -->
+<!-- Capabilities & Services Grid -->
+<section class="bg-surface-off-white border-y border-border-subtle py-section-gap">
+<div class="px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<!-- Capabilities -->
+<div>
+<h2 class="font-headline-lg text-primary mb-8">Capabilities</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="p-6 bg-surface-container-lowest border border-border-subtle rounded-4 hover:border-slate-gray transition-colors">
+<span class="material-symbols-outlined text-strategic-emerald mb-4 block">travel_explore</span>
+<h4 class="font-headline-md text-primary mb-2 text-lg">Market &amp; Audience Research</h4>
+<p class="font-body-md text-slate-gray text-sm">Researching markets, audiences and stakeholder groups to clarify opportunities and local fit.</p>
+</div>
+<div class="p-6 bg-surface-container-lowest border border-border-subtle rounded-4 hover:border-slate-gray transition-colors">
+<span class="material-symbols-outlined text-strategic-emerald mb-4 block">schema</span>
+<h4 class="font-headline-md text-primary mb-2 text-lg">Positioning &amp; Value Narratives</h4>
+<p class="font-body-md text-slate-gray text-sm">Turning technical or complex offerings into clear value propositions, website structure and buyer-facing content.</p>
+</div>
+<div class="p-6 bg-surface-container-lowest border border-border-subtle rounded-4 hover:border-slate-gray transition-colors">
+<span class="material-symbols-outlined text-strategic-emerald mb-4 block">route</span>
+<h4 class="font-headline-md text-primary mb-2 text-lg">Cross-channel Execution</h4>
+<p class="font-body-md text-slate-gray text-sm">Planning and delivering campaigns across social, email, events, partnerships and paid media.</p>
+</div>
+<div class="p-6 bg-surface-container-lowest border border-border-subtle rounded-4 hover:border-slate-gray transition-colors">
+<span class="material-symbols-outlined text-strategic-emerald mb-4 block">troubleshoot</span>
+<h4 class="font-headline-md text-primary mb-2 text-lg">Evidence &amp; Iteration</h4>
+<p class="font-body-md text-slate-gray text-sm">Using campaign, membership and enquiry signals to improve messaging, channels and next actions.</p>
+</div>
+</div>
+</div>
+<!-- Ways I Can Help -->
+<div>
+<h2 class="font-headline-lg text-primary mb-8">Services I Can Support</h2>
+<ul class="flex flex-col gap-2">
+<li class="flex items-center gap-4 p-4 border-b border-border-subtle hover:bg-surface-container-low transition-colors rounded-4">
+<div class="w-1.5 h-1.5 bg-strategic-emerald rounded-full"></div>
+<span class="font-headline-md text-primary text-base">Market &amp; Audience Research</span>
+</li>
+<li class="flex items-center gap-4 p-4 border-b border-border-subtle hover:bg-surface-container-low transition-colors rounded-4">
+<div class="w-1.5 h-1.5 bg-strategic-emerald rounded-full"></div>
+<span class="font-headline-md text-primary text-base">Positioning &amp; Value Narratives</span>
+</li>
+<li class="flex items-center gap-4 p-4 border-b border-border-subtle hover:bg-surface-container-low transition-colors rounded-4">
+<div class="w-1.5 h-1.5 bg-strategic-emerald rounded-full"></div>
+<span class="font-headline-md text-primary text-base">Website, SEO &amp; Content Systems</span>
+</li>
+<li class="flex items-center gap-4 p-4 border-b border-border-subtle hover:bg-surface-container-low transition-colors rounded-4">
+<div class="w-1.5 h-1.5 bg-strategic-emerald rounded-full"></div>
+<span class="font-headline-md text-primary text-base">Campaigns, Partnerships &amp; Launches</span>
+</li>
+<li class="flex items-center gap-4 p-4 border-b border-border-subtle hover:bg-surface-container-low transition-colors rounded-4">
+<div class="w-1.5 h-1.5 bg-strategic-emerald rounded-full"></div>
+<span class="font-headline-md text-primary text-base">CRM, Membership &amp; Community</span>
+</li>
+<li class="flex items-center gap-4 p-4 border-b border-border-subtle hover:bg-surface-container-low transition-colors rounded-4">
+<div class="w-1.5 h-1.5 bg-strategic-emerald rounded-full"></div>
+<span class="font-headline-md text-primary text-base">B2B Enquiry &amp; GTM Workflows</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- When to Work with Me -->
+<section class="px-margin-mobile md:px-gutter max-w-container-max mx-auto py-section-gap"><div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-primary mb-4">When to Work with Me</h2>
+<p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">I’m a good fit when you need a practical bridge between market understanding, clear communication and hands-on execution.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Scenario 1 -->
+<div class="p-8 bg-surface-container-lowest border border-border-subtle rounded-4 hover:border-strategic-emerald transition-colors duration-300">
+<div class="w-12 h-12 bg-surface-off-white rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-strategic-emerald">campaign</span>
+</div>
+<h3 class="font-headline-md text-primary mb-3">Clearer Value Communication</h3>
+<p class="font-body-md text-on-surface-variant">You have a technical or complex offering and need a clearer value proposition, website structure or buyer-facing content.</p>
+</div>
+<!-- Scenario 2 -->
+<div class="p-8 bg-surface-container-lowest border border-border-subtle rounded-4 hover:border-strategic-emerald transition-colors duration-300">
+<div class="w-12 h-12 bg-surface-off-white rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-strategic-emerald">explore</span>
+</div>
+<h3 class="font-headline-md text-primary mb-3">Cross-border Market Testing</h3>
+<p class="font-body-md text-on-surface-variant">You are testing a UK, European or cross-border opportunity and need research, local context, partner mapping and a focused launch plan.</p>
+</div>
+<!-- Scenario 3 -->
+<div class="p-8 bg-surface-container-lowest border border-border-subtle rounded-4 hover:border-strategic-emerald transition-colors duration-300">
+<div class="w-12 h-12 bg-surface-off-white rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-strategic-emerald">rocket_launch</span>
+</div>
+<h3 class="font-headline-md text-primary mb-3">From Attention to Action</h3>
+<p class="font-body-md text-on-surface-variant">Your campaigns attract attention, but the path to registration, membership, enquiry or follow-up is fragmented. I can help connect content, channels and CRM or enquiry workflows.</p>
+</div>
+<!-- Scenario 4 -->
+<div class="p-8 bg-surface-container-lowest border border-border-subtle rounded-4 hover:border-strategic-emerald transition-colors duration-300">
+<div class="w-12 h-12 bg-surface-off-white rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-strategic-emerald">hub</span>
+</div>
+<h3 class="font-headline-md text-primary mb-3">Repeatable Growth Workflows</h3>
+<p class="font-body-md text-on-surface-variant">You want a more consistent way to plan campaigns, track results and hand work over to a team without turning the process into a heavy marketing machine.</p>
+</div>
+</div>
+</div></section>
+<!-- Contact Section -->
+<section class="px-margin-mobile md:px-gutter max-w-container-max mx-auto py-section-gap text-center" id="contact">
+<h2 class="font-headline-lg text-primary mb-6">Let's discuss your next move.</h2>
+<p class="font-body-md text-on-surface-variant max-w-xl mx-auto mb-10">
+                I am currently open to consulting engagements and&nbsp;</p><div class="">strategic advisory roles.
+            </div><p class=""></p>
+<a class="inline-flex items-center justify-center bg-deep-charcoal text-white font-headline-md px-8 py-4 rounded-4 hover:bg-opacity-90 transition-colors" href="mailto:yingyan.zhang.career@gmail.com">
+                Start a conversation
+            </a>
+<div class="mt-8 flex justify-center gap-6 font-label-mono text-label-mono text-slate-gray">
+<a class="hover:text-primary transition-colors" href="https://www.linkedin.com/in/yingyan-zhang-89ba96165/">LinkedIn</a>
+<span class="opacity-50">/</span>
+<a class="hover:text-primary transition-colors" href="/cv/Yingyan-Zhang-CV.pdf">Download CV</a>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="w-full py-section-gap border-t border-border-subtle dark:border-outline-variant bg-surface-off-white dark:bg-surface-container-high text-on-surface dark:text-on-surface-variant font-body-md text-body-md opacity-80 hover:opacity-100 transition-opacity">
+<div class="flex flex-col md:flex-row justify-between items-center px-gutter max-w-container-max mx-auto gap-stack-md">
+<div class="font-label-mono text-label-mono text-primary dark:text-on-surface">
+                © 2024 Yingyan Zhang. All Rights Reserved. <span class="bg-surface-dim/50 px-1 rounded-4 backdrop-blur-sm">[REDACTED FOR PRIVACY]</span>
+</div>
+<nav class="flex gap-6 font-label-mono text-label-mono">
+<a class="text-slate-gray dark:text-on-surface-variant hover:text-strategic-emerald transition-colors duration-300" href="https://www.linkedin.com/in/yingyan-zhang-89ba96165/">LinkedIn</a>
+<a class="text-slate-gray dark:text-on-surface-variant hover:text-strategic-emerald transition-colors duration-300" href="mailto:yingyan.zhang.career@gmail.com">Email</a>
+<a class="text-slate-gray dark:text-on-surface-variant hover:text-strategic-emerald transition-colors duration-300" href="/work">Case Studies</a>
+<span class="text-slate-gray dark:text-on-surface-variant hover:text-strategic-emerald transition-colors duration-300" >Privacy Policy</span>
+</nav>
+</div>
+</footer>
+
+
+</body></html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>A London Property Company Case Study - Yingyan Zhang</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Source+Serif+4:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#6cf8bb",
+                        "surface-variant": "#e4e2e4",
+                        "background": "#fcf8fa",
+                        "on-primary-container": "#7c839b",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#4edea3",
+                        "on-tertiary-fixed": "#271901",
+                        "surface-bright": "#fcf8fa",
+                        "on-primary-fixed": "#131b2e",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "deep-charcoal": "#0F172A",
+                        "on-surface": "#1b1b1d",
+                        "primary-fixed": "#dae2fd",
+                        "on-tertiary-container": "#98805d",
+                        "on-tertiary-fixed-variant": "#574425",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#6ffbbe",
+                        "inverse-surface": "#303032",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "surface-container-high": "#eae7e9",
+                        "surface": "#fcf8fa",
+                        "primary-container": "#131b2e",
+                        "tertiary-fixed-dim": "#dec29a",
+                        "on-secondary-container": "#00714d",
+                        "surface-off-white": "#F8FAFC",
+                        "slate-gray": "#64748B",
+                        "outline-variant": "#c6c6cd",
+                        "primary-fixed-dim": "#bec6e0",
+                        "surface-dim": "#dcd9db",
+                        "tertiary": "#000000",
+                        "inverse-on-surface": "#f3f0f2",
+                        "on-secondary-fixed": "#002113",
+                        "on-tertiary": "#ffffff",
+                        "border-subtle": "#E2E8F0",
+                        "tertiary-container": "#271901",
+                        "secondary": "#006c49",
+                        "strategic-emerald": "#10B981",
+                        "on-background": "#1b1b1d",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#bec6e0",
+                        "on-error-container": "#93000a",
+                        "primary": "#000000",
+                        "surface-tint": "#565e74",
+                        "surface-container-low": "#f6f3f5",
+                        "outline": "#76777d",
+                        "on-secondary-fixed-variant": "#005236",
+                        "surface-container-highest": "#e4e2e4",
+                        "on-surface-variant": "#45464d",
+                        "tertiary-fixed": "#fcdeb5",
+                        "surface-container": "#f0edef"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "gutter": "32px",
+                        "section-gap": "120px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "stack-sm": "8px",
+                        "stack-md": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Geist"],
+                        "display-hero-mobile": ["Geist"],
+                        "headline-md": ["Geist"],
+                        "body-lg": ["\"Source Serif 4\""],
+                        "display-hero": ["Geist"],
+                        "label-mono": ["JetBrains Mono"],
+                        "body-md": ["\"Source Serif 4\""]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "display-hero-mobile": ["32px", { "lineHeight": "1.1", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "body-lg": ["20px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-hero": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "label-mono": ["13px", { "lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Source Serif 4', serif; }
+        h1, h2, h3, h4, h5, h6, .font-headline-lg, .font-headline-md, .font-display-hero { font-family: 'Geist', sans-serif; }
+        .font-label-mono { font-family: 'JetBrains Mono', monospace; }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-strategic-emerald selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-deep-charcoal/80 backdrop-blur-md border-b border-border-subtle dark:border-outline-variant">
+<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold tracking-tight text-primary dark:text-on-primary" href="/">
+                Yingyan Zhang
+            </a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-mono text-label-mono text-slate-gray dark:text-outline hover:text-primary dark:hover:text-on-primary transition-colors hover:bg-surface-container-low dark:hover:bg-primary-container/50 px-2 py-1 rounded" href="/">01. Home</a>
+<a class="font-label-mono text-label-mono text-primary dark:text-secondary-fixed-dim border-b border-primary dark:border-secondary-fixed-dim pb-1 opacity-80 duration-200" href="/work">02. Portfolio</a>
+<a class="font-label-mono text-label-mono text-slate-gray dark:text-outline hover:text-primary dark:hover:text-on-primary transition-colors hover:bg-surface-container-low dark:hover:bg-primary-container/50 px-2 py-1 rounded" href="/about">03. About</a>
+</div>
+<a class="hidden md:inline-flex bg-deep-charcoal text-on-primary font-headline-md text-[14px] font-semibold px-4 py-2 rounded" href="/about#contact">Get in Touch</a>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 0;">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-24 pb-section-gap">
+<!-- Hero Section -->
+<header class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mt-12 mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-stack-md"><div class="md:col-span-7">
+    <p class="font-label-mono text-label-mono text-slate-gray mb-4 uppercase tracking-widest">Case Study // A London Property Company</p>
+    <h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-primary mb-6">
+        Making content support user decisions
+    </h1>
+    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-8">
+        Chinese-language property channel repositioning. Bridging the gap between isolated property listings and the complex decision-making journey of international renters.
+    </p>
+</div>
+<div class="md:col-span-5 flex flex-col gap-8">
+    <div class="space-y-6 border-l border-border-subtle pl-8">
+        <div>
+            <p class="font-label-mono text-xs text-slate-gray uppercase tracking-widest mb-1">Client</p>
+            <p class="font-headline-md text-lg text-primary">A London Property Company</p>
+        </div>
+        <div>
+            <p class="font-label-mono text-xs text-slate-gray uppercase tracking-widest mb-1">Timeline</p>
+            <p class="font-headline-md text-lg text-primary">Oct 2025 – Jul 2026</p>
+        </div>
+        <div>
+            <p class="font-label-mono text-xs text-slate-gray uppercase tracking-widest mb-1">Key Metrics</p>
+            <p class="font-headline-md text-lg text-primary">199 Enquiries, 26 Posts</p>
+        </div>
+    </div>
+    <div class="grid grid-cols-2 gap-4">
+        <div class="border border-border-subtle bg-surface-off-white p-4 rounded">
+            <p class="font-label-mono text-[10px] text-slate-gray mb-1 uppercase">Posts</p>
+            <p class="font-headline-lg text-2xl text-strategic-emerald">26</p>
+        </div>
+        <div class="border border-border-subtle bg-surface-off-white p-4 rounded">
+            <p class="font-label-mono text-[10px] text-slate-gray mb-1 uppercase">Enquiries</p>
+            <p class="font-headline-lg text-2xl text-strategic-emerald">199</p>
+        </div>
+    </div>
+</div></div>
+</header>
+<!-- Main Content Grid -->
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<!-- Section 01 & 02: Challenge & Strategy (Asymmetric Grid) -->
+<section class="mb-section-gap grid grid-cols-1 md:grid-cols-12 gap-stack-md">
+<div class="md:col-span-5 flex flex-col justify-center">
+<div class="mb-8">
+<h2 class="font-label-mono text-label-mono text-slate-gray mb-2">01. Business Challenge</h2>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">The Disconnected Journey</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Property listings alone were insufficient. Prospective international renters required significant pre-education regarding location, amenities, and the leasing process before feeling confident enough to initiate an enquiry. The existing content strategy was fragmented, failing to guide users systematically.
+                        </p>
+</div>
+<div>
+<h2 class="font-label-mono text-label-mono text-slate-gray mb-2">02. Strategic Approach</h2>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Building a Trust Layer</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                            We architected a funnel that intercepted users at their point of confusion, deploying educational content as a bridge to conversion.
+                        </p>
+<div class="bg-surface-off-white p-4 border border-border-subtle rounded font-body-md italic text-slate-gray">
+                            "Transforming passive scrollers into informed applicants by answering their unasked questions through strategic content sequencing."
+                        </div>
+</div>
+</div>
+<div class="md:col-span-7 bg-surface-off-white border border-border-subtle rounded-lg p-6 relative overflow-hidden flex items-center justify-center min-h-[400px]">
+<!-- Diagram Placeholder matching SCREEN_3 vibe -->
+<img alt="A professional, high-quality photograph of a modern residential apartment building exterior in London, featuring clean lines and brick and glass facades." class="w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcwr9elgJaqqdbUwWyKr_F66Vd_PPxH6lNdIASw6s-W8Vuk7JuQcc7GMo32_Wughb_JZwc1PeOXDtdUpTdqRFRja5QsaYdmdfi-aVvOFxU9oew4M9yDeYhR6yqtVd49NMLYPu5rz2OrFGYfdi9rTmnd7m_VX1WOnIWCK-QX8DbaD3N_r9eVmpaCWCXLJhw5zHNsGrHxfkSHzlEg-9bOrQ0pAjcR9yO0DuE-m8EM5O72cRB1Hoxo1w">
+</div>
+</section>
+<!-- Section 03: Audience Strategy (Bento Grid) -->
+<section class="mb-section-gap">
+<h2 class="font-label-mono text-label-mono text-slate-gray mb-6">03. Audience Strategy</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
+<div class="glass-panel p-8 flex flex-col items-start transition-transform hover:-translate-y-1 duration-300">
+<span class="material-symbols-outlined text-4xl text-deep-charcoal mb-4" style="font-variation-settings: &quot;FILL&quot; 0;">school</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Students</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Focused on proximity to universities, study-friendly amenities, and clear explanations of guarantor requirements.
+                        </p>
+</div>
+<div class="glass-panel p-8 flex flex-col items-start transition-transform hover:-translate-y-1 duration-300">
+<span class="material-symbols-outlined text-4xl text-deep-charcoal mb-4" style="font-variation-settings: &quot;FILL&quot; 0;">work</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Professionals</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Targeted with lifestyle-driven content emphasizing commute times, premium building facilities, and neighborhood prestige.
+                        </p>
+</div>
+<div class="glass-panel p-8 flex flex-col items-start transition-transform hover:-translate-y-1 duration-300">
+<span class="material-symbols-outlined text-4xl text-deep-charcoal mb-4" style="font-variation-settings: &quot;FILL&quot; 0;">key</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">First-time BTR Renters</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Educated on the 'Build-to-Rent' concept, highlighting hassle-free management, community events, and all-inclusive billing.
+                        </p>
+</div>
+</div>
+</section>
+<!-- Section 04 & 05: Architecture & Results -->
+<section class="mb-section-gap grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<div class="border border-border-subtle rounded-lg p-8 bg-white">
+<h2 class="font-label-mono text-label-mono text-slate-gray mb-2">04. Content Architecture</h2>
+<h3 class="font-headline-md text-headline-md text-primary mb-6">Structured Pillars</h3>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-strategic-emerald mt-1" style="font-variation-settings: &quot;FILL&quot; 1;">domain</span>
+<div>
+<h4 class="font-headline-md text-lg font-semibold text-primary">Properties</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Deep-dives into specific developments, highlighting unique selling propositions and available floorplans.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-strategic-emerald mt-1" style="font-variation-settings: &quot;FILL&quot; 1;">groups</span>
+<div>
+<h4 class="font-headline-md text-lg font-semibold text-primary">Tenant Life</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Showcasing the lived experience—events, community spaces, and testimonials to build emotional connection.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-strategic-emerald mt-1" style="font-variation-settings: &quot;FILL&quot; 1;">map</span>
+<div>
+<h4 class="font-headline-md text-lg font-semibold text-primary">UK Living Guide</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Practical advice for international arrivals, establishing A London Property Company as a helpful, authoritative local guide.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="border border-border-subtle rounded-lg p-8 bg-surface-off-white relative"><h2 class="font-label-mono text-label-mono text-slate-gray mb-2">05. Media &amp; Results</h2><h3 class="font-headline-md text-headline-md text-primary mb-6">Verifiable Outcomes</h3><div class="space-y-8"><div class="border-b border-border-subtle pb-6"> <h4 class="font-label-mono text-xs text-slate-gray uppercase tracking-widest mb-4">Campaign Impact (KOL/KOC)</h4> <p class="font-body-md text-sm text-on-surface-variant mb-4"> Orchestrated an 8-person creator campaign, transitioning the channel from a passive gallery into a <span class="font-semibold text-primary">measurable acquisition system</span>. </p> <div class="grid grid-cols-1 gap-2">    </div></div><div> <h4 class="font-label-mono text-xs text-slate-gray uppercase tracking-widest mb-4">Overall Account Performance</h4> <p class="font-label-mono text-[10px] text-slate-gray mb-4 italic">Oct 2025 – Jul 2026 • Internal reporting metrics shielded</p> <div class="grid grid-cols-2 gap-4"> <div class="bg-white p-4 rounded border border-border-subtle"> <p class="font-label-mono text-[10px] text-slate-gray uppercase mb-1">Enquiries</p> <p class="font-headline-md text-2xl text-strategic-emerald">199</p> </div> <div class="bg-white p-4 rounded border border-border-subtle"> <p class="font-label-mono text-[10px] text-slate-gray uppercase mb-1">Views</p> <p class="font-headline-md text-2xl text-primary">5,462</p> </div> <div class="bg-white p-4 rounded border border-border-subtle"> <p class="font-label-mono text-[10px] text-slate-gray uppercase mb-1">Posts</p> <p class="font-headline-md text-2xl text-primary">26</p> </div> <div class="bg-white p-4 rounded border border-border-subtle"> <p class="font-label-mono text-[10px] text-slate-gray uppercase mb-1">Interactions</p> <p class="font-headline-md text-2xl text-primary">297</p> </div> </div></div></div></div>
+</section>
+<!-- Section 06: Contribution -->
+<section class="border-t border-border-subtle pt-12">
+<h2 class="font-label-mono text-label-mono text-slate-gray mb-6">06. Yingyan's Contribution</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<h4 class="font-headline-md text-lg text-primary mb-2">Account Architecture</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Structured the social channels to act as a seamless extension of the main corporate site, ensuring brand consistency and logical user flows.</p>
+</div>
+<div>
+<h4 class="font-headline-md text-lg text-primary mb-2">Content Pillars</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Developed the tripartite content strategy (Properties, Life, Guide) to balance promotional material with necessary educational value.</p>
+</div>
+<div>
+<h4 class="font-headline-md text-lg text-primary mb-2">Influencer Coordination</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Identified and managed relationships with key demographic influencers to amplify reach and lend third-party credibility to the properties.</p>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-off-white dark:bg-deep-charcoal border-t border-border-subtle dark:border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-stack-md px-gutter max-w-container-max mx-auto">
+<div class="md:col-span-6">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-on-primary mb-4">
+                    Yingyan Zhang
+                </div>
+<p class="font-body-md text-body-md text-slate-gray dark:text-outline mb-6 max-w-sm">
+                    © 2024 Yingyan Zhang. Built for Growth.
+                </p>
+</div>
+<div class="md:col-span-6 flex flex-wrap gap-x-8 gap-y-4 md:justify-end items-start">
+<a class="font-label-mono text-label-mono text-slate-gray dark:text-outline hover:text-primary dark:hover:text-on-primary hover:underline transition-all" href="mailto:yingyan.zhang.career@gmail.com">Email</a>
+<a class="font-label-mono text-label-mono text-slate-gray dark:text-outline hover:text-primary dark:hover:text-on-primary hover:underline transition-all" href="https://www.linkedin.com/in/yingyan-zhang-89ba96165/">LinkedIn</a>
+<a class="font-label-mono text-label-mono text-slate-gray dark:text-outline hover:text-primary dark:hover:text-on-primary hover:underline transition-all" href="/cv/Yingyan-Zhang-CV.pdf">Download CV</a>
+<span class="font-label-mono text-label-mono text-slate-gray dark:text-outline hover:text-primary dark:hover:text-on-primary hover:underline transition-all">Privacy Policy</span>
+</div>
+</div>
+</footer>
+
+
+
+
+<nav aria-label="Case study navigation" class="max-w-6xl mx-auto px-6 md:px-10 py-12 border-t border-border-subtle flex justify-between items-center gap-8"><a href="/work/centi" class="font-label-mono text-label-mono text-primary hover:text-strategic-emerald">← Previous case</a><a href="/work" class="font-label-mono text-label-mono text-slate-gray hover:text-primary">← Back to all work</a><span></span></nav></body></html>
