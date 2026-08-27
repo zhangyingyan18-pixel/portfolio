@@ -1,0 +1,376 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Member Day Case Study - Yingyan Zhang</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=JetBrains+Mono:wght@100..800&amp;family=Source+Serif+4:opsz,wght@8..60,200..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-container": "#6cf8bb",
+                      "surface-variant": "#e4e2e4",
+                      "background": "#fcf8fa",
+                      "on-primary-container": "#7c839b",
+                      "surface-container-lowest": "#ffffff",
+                      "secondary-fixed-dim": "#4edea3",
+                      "on-tertiary-fixed": "#271901",
+                      "surface-bright": "#fcf8fa",
+                      "on-primary-fixed": "#131b2e",
+                      "error": "#ba1a1a",
+                      "on-primary": "#ffffff",
+                      "deep-charcoal": "#0F172A",
+                      "on-surface": "#1b1b1d",
+                      "primary-fixed": "#dae2fd",
+                      "on-tertiary-container": "#98805d",
+                      "on-tertiary-fixed-variant": "#574425",
+                      "on-secondary": "#ffffff",
+                      "secondary-fixed": "#6ffbbe",
+                      "inverse-surface": "#303032",
+                      "on-error": "#ffffff",
+                      "on-primary-fixed-variant": "#3f465c",
+                      "surface-container-high": "#eae7e9",
+                      "surface": "#fcf8fa",
+                      "primary-container": "#131b2e",
+                      "tertiary-fixed-dim": "#dec29a",
+                      "on-secondary-container": "#00714d",
+                      "surface-off-white": "#F8FAFC",
+                      "slate-gray": "#64748B",
+                      "outline-variant": "#c6c6cd",
+                      "primary-fixed-dim": "#bec6e0",
+                      "surface-dim": "#dcd9db",
+                      "tertiary": "#000000",
+                      "inverse-on-surface": "#f3f0f2",
+                      "on-secondary-fixed": "#002113",
+                      "on-tertiary": "#ffffff",
+                      "border-subtle": "#E2E8F0",
+                      "tertiary-container": "#271901",
+                      "secondary": "#006c49",
+                      "strategic-emerald": "#10B981",
+                      "on-background": "#1b1b1d",
+                      "error-container": "#ffdad6",
+                      "inverse-primary": "#bec6e0",
+                      "on-error-container": "#93000a",
+                      "primary": "#000000",
+                      "surface-tint": "#565e74",
+                      "surface-container-low": "#f6f3f5",
+                      "outline": "#76777d",
+                      "on-secondary-fixed-variant": "#005236",
+                      "surface-container-highest": "#e4e2e4",
+                      "on-surface-variant": "#45464d",
+                      "tertiary-fixed": "#fcdeb5",
+                      "surface-container": "#f0edef"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "unit": "4px",
+                      "gutter": "32px",
+                      "section-gap": "120px",
+                      "container-max": "1280px",
+                      "margin-mobile": "20px",
+                      "stack-sm": "8px",
+                      "stack-md": "24px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Geist"
+                      ],
+                      "display-hero-mobile": [
+                              "Geist"
+                      ],
+                      "headline-md": [
+                              "Geist"
+                      ],
+                      "body-lg": [
+                              "\"Source Serif 4\""
+                      ],
+                      "display-hero": [
+                              "Geist"
+                      ],
+                      "label-mono": [
+                              "JetBrains Mono"
+                      ],
+                      "body-md": [
+                              "\"Source Serif 4\""
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-hero-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-hero": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-mono": [
+                              "13px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            background-color: #ffffff;
+            color: #000000;
+        }
+      </style>
+</head>
+<body class="bg-surface-container-lowest text-primary antialiased selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-deep-charcoal/80 backdrop-blur-md border-b border-border-subtle dark:border-outline-variant flat no shadows">
+<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold tracking-tight text-primary dark:text-on-primary">
+                Yingyan Zhang
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-label-mono text-label-mono text-slate-gray dark:text-outline hover:text-primary dark:hover:text-on-primary transition-colors" href="/">01. Home</a>
+<a class="font-label-mono text-label-mono text-primary dark:text-secondary-fixed-dim border-b border-primary dark:border-secondary-fixed-dim pb-1 opacity-80 duration-200" href="/work">02. Portfolio</a>
+<a class="font-label-mono text-label-mono text-slate-gray dark:text-outline hover:text-primary dark:hover:text-on-primary transition-colors" href="/about">03. About</a>
+</div>
+<a class="hidden md:inline-flex bg-deep-charcoal text-on-primary font-headline-md text-[14px] font-semibold px-4 py-2 rounded" href="/about#contact">
+                Get in Touch
+            </a>
+<button class="md:hidden flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-24 pb-section-gap">
+<!-- Hero Section -->
+<header class="px-gutter max-w-container-max mx-auto mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-stack-md">
+<div class="md:col-span-8 md:col-start-1">
+<span class="inline-block font-label-mono text-label-mono text-slate-gray mb-4 tracking-widest uppercase border border-border-subtle px-2 py-1 rounded">Case Study</span>
+<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-primary mb-6">
+                        Member Day: Turning data into CRM decisions
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-8">
+                        A data-driven commercial activation exploring how targeted promotions influence member behavior and drive overall retail performance.
+                    </p><div class="grid grid-cols-2 md:grid-cols-3 gap-6 pt-8 border-t border-border-subtle">
+<div>
+<p class="font-label-mono text-xs text-slate-gray uppercase mb-1">Client</p>
+<p class="font-body-md text-primary font-bold">Tian Tian Market</p>
+</div>
+<div>
+<p class="font-label-mono text-xs text-slate-gray uppercase mb-1">Timeline</p>
+<p class="font-body-md text-primary font-bold">May 2024</p>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Layout (Inspired by Screen 3) -->
+<div class="px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<div class="bg-surface-off-white rounded-xl p-6 md:p-12 border border-border-subtle relative overflow-hidden shadow-sm">
+<!-- Central Visual / Dashboard Mock -->
+<div class="relative w-full h-auto mb-16 rounded-lg border border-border-subtle overflow-hidden bg-white shadow-sm p-4">
+<!-- Header for Mock -->
+<div class="flex justify-between items-center mb-6 pb-4 border-b border-border-subtle">
+<div class="font-headline-md text-headline-md text-primary">Performance Overview</div>
+<div class="font-label-mono text-label-mono text-slate-gray">Date: May 29–30, 2024</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<!-- Column 1: Core Metrics -->
+<div class="flex flex-col space-y-6">
+<div class="p-4 bg-surface rounded border border-border-subtle">
+<span class="font-label-mono text-label-mono text-slate-gray block mb-2">Member Participation</span>
+<div class="font-headline-lg text-headline-lg text-primary">High participation</div>
+<span class="text-sm text-strategic-emerald flex items-center mt-1"><span class="material-symbols-outlined text-sm mr-1" data-icon="trending_up">trending_up</span> Above average activity</span>
+</div>
+<div class="p-4 bg-surface rounded border border-border-subtle">
+<h4 class="font-headline-md text-headline-md text-primary mb-3">04. Activation Design</h4>
+<ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start"><span class="material-symbols-outlined text-primary mr-2" data-icon="sell">sell</span> Member offer</li>
+<li class="flex items-start"><span class="material-symbols-outlined text-primary mr-2" data-icon="stars">stars</span> Bonus points mechanic</li>
+<li class="flex items-start"><span class="material-symbols-outlined text-primary mr-2" data-icon="how_to_reg">how_to_reg</span> Frictionless Registration</li>
+</ul>
+</div>
+</div>
+<!-- Column 2 & 3: Flow and Analysis -->
+<div class="lg:col-span-2 flex flex-col space-y-6">
+<!-- Strategic Flow Diagram Mock -->
+<div class="w-full bg-white p-6 border border-border-subtle rounded flex flex-col items-center justify-center relative min-h-[300px]">
+<h4 class="absolute top-4 left-4 font-label-mono text-label-mono text-slate-gray tracking-widest">02. STRATEGIC APPROACH</h4>
+<div class="flex flex-col md:flex-row items-center justify-between w-full max-w-3xl mt-8">
+<div class="flex flex-col items-center text-center w-24">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center mb-2 border border-outline-variant">
+<span class="material-symbols-outlined text-primary" data-icon="lightbulb">lightbulb</span>
+</div>
+<span class="font-label-mono text-xs text-primary">Insight</span>
+</div>
+<div class="hidden md:block flex-grow h-px bg-outline-variant relative mx-2">
+<span class="absolute right-0 top-1/2 transform -translate-y-1/2 material-symbols-outlined text-outline-variant text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+<div class="flex flex-col items-center text-center w-24">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center mb-2 border border-outline-variant">
+<span class="material-symbols-outlined text-primary" data-icon="local_offer">local_offer</span>
+</div>
+<span class="font-label-mono text-xs text-primary">Offer</span>
+</div>
+<div class="hidden md:block flex-grow h-px bg-outline-variant relative mx-2">
+<span class="absolute right-0 top-1/2 transform -translate-y-1/2 material-symbols-outlined text-outline-variant text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+<div class="flex flex-col items-center text-center w-24">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center mb-2 border border-primary">
+<span class="material-symbols-outlined text-on-primary" data-icon="campaign">campaign</span>
+</div>
+<span class="font-label-mono text-xs text-primary font-bold">Activation</span>
+</div>
+<div class="hidden md:block flex-grow h-px bg-outline-variant relative mx-2">
+<span class="absolute right-0 top-1/2 transform -translate-y-1/2 material-symbols-outlined text-outline-variant text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+<div class="flex flex-col items-center text-center w-24">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center mb-2 border border-outline-variant">
+<span class="material-symbols-outlined text-primary" data-icon="analytics">analytics</span>
+</div>
+<span class="font-label-mono text-xs text-primary">Analysis</span>
+</div>
+<div class="hidden md:block flex-grow h-px bg-outline-variant relative mx-2">
+<span class="absolute right-0 top-1/2 transform -translate-y-1/2 material-symbols-outlined text-outline-variant text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+<div class="flex flex-col items-center text-center w-24">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center mb-2 border border-strategic-emerald">
+<span class="material-symbols-outlined text-strategic-emerald" data-icon="done_all">done_all</span>
+</div>
+<span class="font-label-mono text-xs text-primary">Decision</span>
+</div>
+</div>
+</div>
+<!-- Analysis Layers Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="bg-white p-4 border border-border-subtle rounded">
+<div class="flex items-center mb-2">
+<span class="material-symbols-outlined text-slate-gray mr-2" data-icon="group">group</span>
+<span class="font-label-mono text-xs font-bold">Mem vs Non-Mem</span>
+</div>
+<p class="font-body-md text-sm text-on-surface-variant">Differential spend analysis during promo window.</p>
+</div>
+<div class="bg-white p-4 border border-border-subtle rounded">
+<div class="flex items-center mb-2">
+<span class="material-symbols-outlined text-slate-gray mr-2" data-icon="shopping_basket">shopping_basket</span>
+<span class="font-label-mono text-xs font-bold">Basket Size</span>
+</div>
+<p class="font-body-md text-sm text-on-surface-variant">Impact of points multiplier on units per transaction.</p>
+</div>
+<div class="bg-white p-4 border border-border-subtle rounded">
+<div class="flex items-center mb-2">
+<span class="material-symbols-outlined text-slate-gray mr-2" data-icon="storefront">storefront</span>
+<span class="font-label-mono text-xs font-bold">Store Perf</span>
+</div>
+<p class="font-body-md text-sm text-on-surface-variant">Regional variance in offer uptake and conversion.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Text Content Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
+<div>
+<h2 class="font-label-mono text-label-mono text-slate-gray mb-2">01. BUSINESS CHALLENGE</h2>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Understanding Behavioral Change</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            The core challenge was to determine if broad-based promotions drive meaningful, long-term behavior change among the member base, or merely subsidize existing purchase intent. We needed to isolate the incremental value of 'Member Day' mechanics from baseline sales trends.
+                        </p>
+</div>
+<div class="bg-white p-6 border border-border-subtle rounded-lg shadow-sm">
+<h2 class="font-label-mono text-label-mono text-slate-gray mb-2">06. YINGYAN'S CONTRIBUTION</h2>
+<ul class="space-y-4">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mt-1 mr-3 text-sm" data-icon="check_circle">check_circle</span>
+<div>
+<strong class="font-headline-md text-base text-primary block">Member Proposition</strong>
+<span class="font-body-md text-sm text-on-surface-variant">Designed the tiered incentive structure based on historical member behaviour data.</span>
+</div>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mt-1 mr-3 text-sm" data-icon="check_circle">check_circle</span>
+<div>
+<strong class="font-headline-md text-base text-primary block">Benefits Copy</strong>
+<span class="font-body-md text-sm text-on-surface-variant">Crafted the core messaging hierarchy to ensure clarity of the value exchange.</span>
+</div>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mt-1 mr-3 text-sm" data-icon="check_circle">check_circle</span>
+<div>
+<strong class="font-headline-md text-base text-primary block">Commercial Readout</strong>
+<span class="font-body-md text-sm text-on-surface-variant">Led the post-campaign analysis, defining the 'Next Decision' protocols for future activations.</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-off-white dark:bg-deep-charcoal border-t border-border-subtle dark:border-outline-variant flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-stack-md px-gutter max-w-container-max mx-auto">
+<div class="md:col-span-4">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-on-primary mb-4">
+                    Yingyan Zhang
+                </div>
+<p class="font-body-md text-body-md text-slate-gray dark:text-outline">
+                    © 2024 Yingyan Zhang. Built for Growth.
+                </p>
+</div>
+<div class="md:col-span-8 flex flex-wrap gap-x-8 gap-y-4 justify-start md:justify-end">
+<a class="font-label-mono text-label-mono text-slate-gray dark:text-outline hover:text-primary dark:hover:text-on-primary hover:underline transition-all" href="mailto:yingyan.zhang.career@gmail.com">Email</a>
+<a class="font-label-mono text-label-mono text-slate-gray dark:text-outline hover:text-primary dark:hover:text-on-primary hover:underline transition-all" href="https://www.linkedin.com/in/yingyan-zhang-89ba96165/">LinkedIn</a>
+<a class="font-label-mono text-label-mono text-slate-gray dark:text-outline hover:text-primary dark:hover:text-on-primary hover:underline transition-all" href="/cv/Yingyan-Zhang-CV.pdf">Download CV</a>
+<span class="font-label-mono text-label-mono text-slate-gray dark:text-outline hover:text-primary dark:hover:text-on-primary hover:underline transition-all" >Privacy Policy</span>
+</div>
+</div>
+</footer>
+<nav aria-label="Case study navigation" class="max-w-6xl mx-auto px-6 md:px-10 py-12 border-t border-border-subtle flex justify-between items-center gap-8"><a href="/work/canary-wharf" class="font-label-mono text-label-mono text-primary hover:text-strategic-emerald">← Previous case</a><a href="/work" class="font-label-mono text-label-mono text-slate-gray hover:text-strategic-emerald">← Back to all work</a><a href="/work/centi" class="font-label-mono text-label-mono text-primary hover:text-strategic-emerald">Next case →</a></nav></body></html>
