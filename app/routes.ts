@@ -4,6 +4,7 @@ import aboutHtml from "./content/about.html?raw";
 import canaryWharfHtml from "./content/canary-wharf.html?raw";
 import centiHtml from "./content/centi.html?raw";
 import propertyCompanyHtml from "./content/greystar.html?raw";
+import memberDayHtml from "./content/member-day.html?raw";
 
 export const routeDocuments: Record<string, string> = {
   "/": homeHtml,
@@ -12,6 +13,7 @@ export const routeDocuments: Record<string, string> = {
   "/work/canary-wharf": canaryWharfHtml,
   "/work/centi": centiHtml,
   "/work/london-property-company": propertyCompanyHtml,
+  "/work/member-day": memberDayHtml,
 };
 
 export function documentForPath(path: string) {
